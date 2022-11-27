@@ -16,22 +16,60 @@
   </head>
   <body>
     <header-box></header-box>
-    <script src="header.js"></script>
+    <script src="/modules/header.js"></script>
 
     <div class="searchfield">
+      <img class="ra_logo" src="/img/shortcut.png" alt="" srcset="" />
       <h2>Shortcuts</h2>
     </div>
 
     <div class="main">
       <h3>Kortkommandon för olika program</h3>
-      <p>
+      <p class="shortcut_p">
         Här finns det diverse olika kortkommandon som man kan använda sig av för
         att lättare navigera genom Windows
       </p>
-      <product-box-container></product-box-container>
-      <script src="products_ulBox.js"></script>
+
+      <ul class="command_boxes">
+        <li>
+          <h4>Textkommandon</h4>
+          <div class="command_section">
+            <h5>Generella</h5>
+            <p>Ctrl+C - Kopiera Text</p>
+            <p>Ctrl+X - Klipp ut Text</p>
+            <p>Ctrl+V - Klistra in Text</p>
+          </div>
+
+          <div class="command_section">
+            <h5>Utforskaren</h5>
+            <p>Win+E - Öppna utforskaren</p>
+            <p>Ctrl+E - Gå till sökfältet i aktuell mapp</p>
+            <p>Ctrl+L - gå till sökvägsfältet och highlighta</p>
+            <p>Ctrl+N - Nytt utforskarfönster</p>
+            <p>Ctrl+W - Stäng aktuellt fönster</p>
+          </div>
+        </li>
+        <li>
+          <div class="command_section">
+            <h4>SF kommandon</h4>
+            <h5>Cases</h5>
+            <p>"M" - Macro</p>
+            <p>Ctrl+X - Stäng aktuell flik</p>
+            <p>Ctrl+W - Stäng alla flikar</p>
+          </div>
+
+          <div class="command_section">
+            <h5>Cases</h5>
+            <p>Ctrl+C - Kopiera Text</p>
+            <p>Ctrl+X - Klipp ut Text</p>
+            <p>Ctrl+V - Klistra in Text</p>
+          </div>
+        </li>
+      </ul>
+      <!-- <product-box-container></product-box-container>
+      <script src="/modules/products_ulBox.js"></script> -->
     </div>
     <footer-box></footer-box>
-    <script src="footer.js"></script>
+    <script src="/modules/footer.js"></script>
   </body>
 </html>

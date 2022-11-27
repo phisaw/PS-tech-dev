@@ -64,7 +64,7 @@ h1 {
 
 .ul_links a {
     
-    background-color: rgba(4, 174, 89, 0.406);
+    background-color: #04ae59af;
     border-radius: 30px;
     padding: 7px;
     color: azure;
@@ -81,7 +81,7 @@ h1 {
     min-height: 160px;
     display: grid;
     justify-content: center;
-    background-image: url("https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/635a93d9f6b36a1df9bb9bd7_horizontal%20(15).svg");
+    background: linear-gradient(#04ae5968, #ffffff);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200%;
@@ -92,7 +92,6 @@ h1 {
 h2 {
     font-size: 1.33rem;
     align-self: center;
-    padding-top: 30px;
     justify-self: center;
 }
 
@@ -147,11 +146,11 @@ h3 {
     width: 150px;
     height: 60px;
     border-radius: 10px;
-    background-color: rgba(4, 174, 89, 0.406);
+    background-color: #04ae5968;
 }
 
 .product_boxes li:hover {
-    background-color: rgba(4, 174, 89, 0.685);
+    background-color: #04ae59af;
     border-radius: 10px;
 }
 
