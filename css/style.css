@@ -78,12 +78,13 @@ h1 {
 }
 
 .searchfield {
-    min-height: 160px;
+    min-height: auto;
     display: grid;
     justify-content: center;
     background: linear-gradient(to top,rgb(255, 255, 255),#04ae5968);
-    background-size: 200%;
-    
+    padding-top: 50px;
+    gap: 10px;
+    padding-bottom: 20px;
 }
 
 h2 {
