@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PS Tech Development</title>
+  </head>
+  <body>
+    <header-box></header-box>
+    <script src="header.js"></script>
+
+    <div class="searchfield">
+      <h2>Hur kan vi hjälpa till?</h2>
+      <input type="text" name="search" placeholder="Sök här..." id="search" />
+    </div>
+
+    <div class="main">
+      <h3>Vilken produkt söker du manualer till?</h3>
+      <p class="main_p">
+        Nedan kan du hitta manualer till intressanta ämnen. uppdateringar sker
+        löpande. Klicka på produkten du vill lära dig mer om.
+      </p>
+
+      <ul class="product_boxes">
+        <product-item
+          product="Webdev"
+          img_location="./img/webdev.png"
+          url_location="/"
+          i
+        ></product-item>
+        <product-item
+          product="RaspPi"
+          img_location="./img/pi_logo.png"
+          url_location="raspi.html"
+          i
+        ></product-item>
+        <product-item
+          product="Ubuntu"
+          img_location="./img/ubuntu-logo.png"
+          url_location="/"
+          i
+        ></product-item>
+        <product-item
+          product="Chrome"
+          img_location="./img/chrome.png"
+          url_location="/"
+          i
+        ></product-item>
+        <product-item
+          product="Shortcuts"
+          img_location="./img/shortcut.png"
+          url_location="shortcuts.html"
+          i
+        ></product-item>
+        <product-item
+          product="Docker"
+          img_location="./img/docker.png"
+          url_location="/"
+          i
+        ></product-item>
+      </ul>
+      <script src="product_item.js"></script>
+    </div>
+    <footer-box></footer-box>
+    <script src="/modules/footer.js"></script>
+  </body>
+</html>
