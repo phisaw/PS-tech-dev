@@ -1,17 +1,17 @@
 .ul_links a {
 
     background-color: 
-    #70A1FF;
+    #e270ff;
 }
 
 .searchfield {
-    background:linear-gradient(#C2C0C0,
-    #70A1FF);
+    background:linear-gradient(to top,#ffffff,
+    #e270ff);
     display: grid;
     grid-template-columns:1fr;
     align-content: center;
     justify-items: center;
-    
+    gap: 10px;
 }
 
 h2 {

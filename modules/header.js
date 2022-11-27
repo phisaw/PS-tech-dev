@@ -2,19 +2,23 @@ class HeaderBox extends HTMLElement {
     constructor() {
         super();
         this.innerHTML =`
+
         <header>
         <div class="head_links">
+        <a href="/">
           <h1>PS Tech Development</h1>
+        </a>
         </div>
         <div></div>
   
         <nav class="links">
           <ul class="ul_links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">about</a></li>
+            <li><a class="link" href="/">Home</a></li>
+            <li><a class="link" href="/">about</a></li>
           </ul>
         </nav>
-      </header>`;
+      </header>
+`;
     
     }
 }

@@ -64,7 +64,7 @@ h1 {
 
 .ul_links a {
     
-    background-color: #04ae59af;
+    background-color: #04df726e;
     border-radius: 30px;
     padding: 7px;
     color: azure;
@@ -81,11 +81,8 @@ h1 {
     min-height: 160px;
     display: grid;
     justify-content: center;
-    background: linear-gradient(#04ae5968, #ffffff);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(to top,rgb(255, 255, 255),#04ae5968);
     background-size: 200%;
-    /*background-color: bisque;*/
     
 }
 
@@ -150,7 +147,7 @@ h3 {
 }
 
 .product_boxes li:hover {
-    background-color: #04ae59af;
+    background-color: rgba(4, 174, 89, 0.685);
     border-radius: 10px;
 }
 

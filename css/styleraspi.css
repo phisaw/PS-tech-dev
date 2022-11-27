@@ -1,0 +1,36 @@
+.ul_links a {
+
+    background-color: 
+    #70A1FF;
+}
+
+.searchfield {
+    background:linear-gradient(to top,#ffffff,
+    #70A1FF);
+    display: grid;
+    grid-template-columns:1fr;
+    align-content: center;
+    justify-items: center;
+    
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.ra_logo{
+    width: 5em;
+}
+
+
+@media only screen and (min-width: 700px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    .ra_logo{
+        width: 8em;
+    }
+
+}
