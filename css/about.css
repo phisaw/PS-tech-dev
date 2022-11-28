@@ -48,6 +48,12 @@ h2 {
 }
 
 .card_container{
+
+
+    border: #1c191e46;
+    border-width: 0.5px;
+    border-style: solid;
+
     border-radius: 20px;
     width: 350px;
     height: 200px;
@@ -60,17 +66,17 @@ h2 {
 
 .card{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+
 }
 
 .card h3 {
-        margin-top: 25px;
+        padding-bottom: 40px;
+        margin-left: 10px;
         font-size: 1.2rem;
-        align-self: top;
+        align-self: center;
         padding-top: 0px;
         text-align: left;
-        align-self: flex-start;
 }
 
 .card_buttons {
@@ -85,6 +91,15 @@ h2 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    border-color: #cbc1b1;
+    border: #1c191e46;
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+.photo_name {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 
@@ -104,6 +119,14 @@ h2 {
 .profile_pic {
     margin: 10px;
     width: 50px;
+
+}
+
+.github {
+    padding-top: 80px;
+    justify-self: end;
+    margin: 10px;
+    width: 30px;
 
 }
 
