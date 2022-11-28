@@ -60,7 +60,7 @@ h2 {
 
 .card{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -69,7 +69,7 @@ h2 {
         font-size: 1.2rem;
         align-self: top;
         padding-top: 0px;
-        text-align: center;
+        text-align: left;
         align-self: flex-start;
 }
 
