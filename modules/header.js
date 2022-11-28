@@ -14,7 +14,7 @@ class HeaderBox extends HTMLElement {
         <nav class="links">
           <ul class="ul_links">
             <li><a class="link" href="/">Home</a></li>
-            <li><a class="link" href="/">about</a></li>
+            <li><a class="link" href="/about.html">about</a></li>
           </ul>
         </nav>
       </header>

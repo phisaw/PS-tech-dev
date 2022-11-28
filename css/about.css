@@ -1,0 +1,166 @@
+body {
+    height: 100%;
+    grid-template-rows: 0.5fr .5fr 3fr;
+    background:linear-gradient(to top,#ffffff,#cbc1b1);
+}
+
+header {
+    background: none;
+}
+
+.ul_links a {
+
+    background-color: 
+    #ffffff;
+    color: #1c191e;
+}
+
+.ul_links a:hover {
+    background-color: rgb(255, 253, 253);
+}
+
+.searchfield {
+    max-height: 50px;
+    padding: 0;
+    gap: 0;
+    background: none;
+    display: grid;
+    grid-template-columns:1fr;
+    align-content: center;
+    justify-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.ra_logo{
+    width: 5em;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card_container{
+    border-radius: 20px;
+    width: 350px;
+    height: 200px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card h3 {
+        margin-top: 25px;
+        font-size: 1.2rem;
+        align-self: top;
+        padding-top: 0px;
+        text-align: center;
+        align-self: flex-start;
+}
+
+.card_buttons {
+    height: 20px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.card_buttons div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+
+.greenb {
+    background-color: #00CA4E;
+}
+
+.yellowb {
+    background-color: #FFBD44;
+}
+
+.redb {
+    background-color: #FF605C;
+}
+
+
+.profile_pic {
+    margin: 10px;
+    width: 50px;
+
+}
+
+.card p {
+    margin-left: 5px;
+}
+
+
+
+footer {
+    background-image: none;
+    gap: 10px;
+}
+
+
+footer a {
+    /* background-image: none; */
+    color: #1c191e;
+}
+
+footer h4 {
+    /* background-image: none; */
+    color: #1c191e;
+}
+
+
+@media only screen and (min-width: 700px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    .ra_logo{
+        width: 8em;
+    }
+
+    .product_boxes {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .searchfield {
+        min-height: 100px;
+    }
+
+    .product_boxes {
+        margin-right: 10%;
+        margin-left: 10%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    
+}
