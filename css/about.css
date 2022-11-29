@@ -57,10 +57,18 @@ h2 {
     border-radius: 20px;
     width: 350px;
     height: 200px;
-    background-color: aliceblue;
+    background-color: rgb(240, 248, 255);
     display: grid;
     grid-template-columns: 1fr;
     
+}
+
+.card_container:hover {
+    scale: 110%;
+    border-width: 2px;
+    border-color: goldenrod;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 
@@ -70,6 +78,8 @@ h2 {
 
 }
 
+
+
 .card h3 {
         padding-bottom: 40px;
         margin-left: 10px;
@@ -77,14 +87,19 @@ h2 {
         align-self: center;
         padding-top: 0px;
         text-align: left;
+        
 }
 
 .card_buttons {
+    justify-self: end;
+    width: 60px;
     height: 20px;
-    margin: 10px;
+    margin-top: 7px;
+    margin-right: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
+    justify-items: end;
+    gap: 2px;
 }
 
 .card_buttons div {
@@ -123,7 +138,7 @@ h2 {
 }
 
 .github {
-    padding-top: 80px;
+    align-self: end;
     justify-self: end;
     margin: 10px;
     width: 30px;
@@ -131,7 +146,7 @@ h2 {
 }
 
 .card p {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 
@@ -151,6 +166,7 @@ footer h4 {
     /* background-image: none; */
     color: #1c191e;
 }
+
 
 
 @media only screen and (min-width: 700px) {
