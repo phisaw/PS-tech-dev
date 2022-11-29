@@ -1,5 +1,4 @@
 .ul_links a {
-
     background-color: 
     #7d8067;
 }
@@ -34,6 +33,14 @@ p {
 }
 
 .counter-container {
+    background-color: rgb(172, 172, 172);
+    padding: 20px;
+    justify-self: center;
+    border-color: black;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+
     margin-top: 20px;
     margin-bottom: 50px;
     gap: 10px;
@@ -43,43 +50,48 @@ p {
 }
 
 .counter-container span {
-    background-color: rgb(149, 153, 204);
+    background-color: rgb(255, 255, 255);
     height: 40px;
+    width: 40px;
     line-height: 40px;
-    border-color: black;
     font-weight: 700;
-    border-radius: 10px;
+
+    border-color: black;
+    border-radius: 50%;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
+    
     align-self: center;
+    justify-self: center;
     grid-column:  2;
     grid-area: span;
     text-align: center;
 
+
 }
 
 .counter-container button {
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 #btnIncrease {
     grid-area: button1;
-    background-color: green;
+    background-color: rgb(30, 213, 30);
 }
 
 #btnReset {
     grid-area: button2;
-    background-color: rgb(128, 0, 0);
+    background-color: rgb(201, 26, 26);
 }
 
 #btnDecrease {
     grid-area: button3;
-    background-color: rgb(119, 128, 0);
+    background-color: rgb(218, 232, 22);
 }
 
 
 .counter-container button {
-    width: 100px;
+    width: 40px;
     height: 40px;
 }
 
