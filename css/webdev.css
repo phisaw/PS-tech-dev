@@ -1,12 +1,20 @@
 .ul_links a {
 
     background-color: 
-    #e270ff;
+    #7d8067;
 }
 
+
+h3 {
+    overflow-wrap: break-word;
+}
+
+body {
+    grid-template-rows: auto 1fr 1fr .2fr 1fr;
+}
 .searchfield {
     background:linear-gradient(to top,#ffffff,
-    #e270ff);
+    #7d8067);
     display: grid;
     grid-template-columns:1fr;
     align-content: center;
@@ -21,6 +29,59 @@ h2 {
     width: 5em;
 }
 
+p {
+    text-align: center;
+}
+
+.counter-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "span span span" "button1 button2 button3" ;
+}
+
+.counter-container span {
+    background-color: rgb(149, 153, 204);
+    height: 40px;
+    line-height: 40px;
+    border-color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    align-self: center;
+    grid-column:  2;
+    grid-area: span;
+    text-align: center;
+
+}
+
+.counter-container button {
+    border-radius: 10px;
+}
+
+#btnIncrease {
+    grid-area: button1;
+    background-color: green;
+}
+
+#btnReset {
+    grid-area: button2;
+    background-color: rgb(128, 0, 0);
+}
+
+#btnDecrease {
+    grid-area: button3;
+    background-color: rgb(119, 128, 0);
+}
+
+
+.counter-container button {
+    width: 100px;
+    height: 40px;
+}
 
 @media only screen and (min-width: 700px) {
 

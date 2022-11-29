@@ -48,14 +48,12 @@ h2 {
 }
 
 .card_container{
-
-
     border: #1c191e46;
     border-width: 0.5px;
     border-style: solid;
 
     border-radius: 20px;
-    width: 350px;
+    width: 300px;
     height: 200px;
     background-color: rgb(240, 248, 255);
     display: grid;
@@ -183,6 +181,10 @@ footer h4 {
         display: grid;
         justify-content: center;
         align-content: center;
+    }
+
+    .card_container{
+        width: 350px;
     }
 
 }
