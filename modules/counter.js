@@ -14,7 +14,11 @@ btns.forEach((btn) => {
         }else 
         if (styles.contains('Decrease')) {
             count--
-        }else {
+        }else 
+        if (styles.contains('Power')) {
+            count *= 2
+        }
+        else {
             count = 0
         }
 

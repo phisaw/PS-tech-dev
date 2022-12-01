@@ -46,7 +46,7 @@ p {
     gap: 10px;
     display: grid;
     justify-content: center;
-    grid-template-areas: "span span span" "button1 button2 button3" ;
+    grid-template-areas: "span span span" "button1 button2 button3" "button4 button4 button4";
 }
 
 .counter-container span {
@@ -72,6 +72,7 @@ p {
 
 .counter-container button {
     border-radius: 50%;
+    font-size: larger;
 }
 
 #btnIncrease {
@@ -89,6 +90,12 @@ p {
     background-color: rgb(218, 232, 22);
 }
 
+
+#btnPwr {
+    grid-area: button4;
+    background-color: rgb(201, 26, 198);
+    grid-column: 2;
+}
 
 .counter-container button {
     width: 40px;
