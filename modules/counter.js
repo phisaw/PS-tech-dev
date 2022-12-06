@@ -1,8 +1,6 @@
 const counter = document.querySelector('#counter')
 const btns = document.querySelectorAll('.btn')
 
-console.log(btns)
-
 let count = 0
 
 btns.forEach((btn) => {
