@@ -35,54 +35,54 @@ function calcFoodTot(food, tip) {
 
 //console.log(calcFoodTot(150,20))
 
-const sumArrow = (a,b) => a + b
-//console.log(sumArrow(10,50))
+// const sumArrow = (a,b) => a + b
+// //console.log(sumArrow(10,50))
 
 
-// groceries = ['banana',"apple","pear","orange" ]
+// // groceries = ['banana',"apple","pear","orange" ]
 
-// groceries.push('toe')
-// //console.log(groceries.slice(1,3))
-// //console.log(groceries.indexOf('apple'))
+// // groceries.push('toe')
+// // //console.log(groceries.slice(1,3))
+// // //console.log(groceries.indexOf('apple'))
 
-// const person = {
-//     name: 'Leonardo',
-//     shirt: 'white'
-// }
-// const person2 = {
-//     name: 'Amber',
-//     shirt: 'Blue'
-// }
-const introducer = (name, shirt) => {
-    const person = {
-        name: name,
-        shirt: shirt,
-        assets: 100000,
-        liability: 50000,
-        networth: function () {
-            return this.assets - this.liability
-        }
-    }
-    const intro = `Hi my name is ${person.name} and the color of my shirt is ${person.shirt}. My networth is $${person.networth()} USD`
-    return intro
-}
-
-//console.log(introducer('Leonardo','White '))
-
-
-fruits = ['banana',"apple","pear","orange" ]
-
-
-// for (let i = 0; i < fruits.length; i++) {
-//     console.log(fruits[i])
-// }
-// for (const fruit of fruits) {
-//     console.log('hello ' + fruit)
+// // const person = {
+// //     name: 'Leonardo',
+// //     shirt: 'white'
+// // }
+// // const person2 = {
+// //     name: 'Amber',
+// //     shirt: 'Blue'
+// // }
+// const introducer = (name, shirt) => {
+//     const person = {
+//         name: name,
+//         shirt: shirt,
+//         assets: 100000,
+//         liability: 50000,
+//         networth: function () {
+//             return this.assets - this.liability
+//         }
+//     }
+//     const intro = `Hi my name is ${person.name} and the color of my shirt is ${person.shirt}. My networth is $${person.networth()} USD`
+//     return intro
 // }
 
-const numbers = [1,2,3,4,5,6,7,8]
+// //console.log(introducer('Leonardo','White '))
 
-let result = []
+
+// fruits = ['banana',"apple","pear","orange" ]
+
+
+// // for (let i = 0; i < fruits.length; i++) {
+// //     console.log(fruits[i])
+// // }
+// // for (const fruit of fruits) {
+// //     console.log('hello ' + fruit)
+// // }
+
+// const numbers = [1,2,3,4,5,6,7,8]
+
+// let result = []
 
 // for (const nums of numbers) {
 //     console.log(nums*2)
@@ -91,26 +91,49 @@ let result = []
 
 //console.log(result)
 
-const double = (numbers) => {
-    let result = []
-    for (const number of numbers) {
-        result.push(number ** 2)
-    }
-    return result
-}
-//console.log(double([1,2,3,4,5,6]))
+// const double = (numbers) => {
+//     let result = []
+//     for (const number of numbers) {
+//         result.push(number ** 2)
+//     }
+//     return result
+// }
+// //console.log(double([1,2,3,4,5,6]))
 
-const letterCounter = () => {
+// const letterCounter = () => {
 
+//     let result = 0;
+
+//     for (index in phrase) {
+//         console.log(Number(index)+1)
+//         result = Number(index) + 1
+//     }
+//     return {result}
+// }
+
+//const phrase = prompt('Letters in this sentence is')
+// letterCounter()
+
+
+
+ const sumArray = (numbers) => {
     let result = 0;
-
-    for (index in phrase) {
-        console.log(Number(index)+1)
-        result = Number(index) + 1
+    //for loop
+    for (const number of numbers) {
+        result = number + result
+        console.log(`current result is ${result}`)
     }
-    return {result}
-}
+    return { result }
+ }
+ //const nums = [1,2,3,4,5]
+ //console.log(sumArray(nums))
 
+ function sum(arr) {
+    var total = 0;
+    for (var i = 0; i < arr.length; i++) {
+      total += arr[i];
+    }
+    return total;
+  }
 
-const phrase = prompt('Letters in this sentence is')
-letterCounter()
+  console.log(sum([1,2,3,4,5,6]))

@@ -1,0 +1,43 @@
+body {
+    height: 100%;
+    grid-template-rows: 0.5fr .5fr 3fr;
+    background: url(/img/1385574.jpg);
+    /* background:linear-gradient(to top,#ffffff,#cbc1b1); */
+}
+
+header {
+    Background: none;
+}
+
+h1, h2, h3, h4, p {
+    color: whitesmoke;
+}
+
+
+.product_boxes li {
+    background-color: #a4a4a468;
+}
+
+.product_boxes li:hover {
+    background-color: rgba(28, 236, 132, 0.431);
+}
+
+.product_boxes a {
+    color:rgb(255, 255, 255);
+}
+
+footer {
+    background: none;
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+    display: grid;
+    gap: 30px;
+
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+footer h4 {
+    color: whitesmoke;
+}
