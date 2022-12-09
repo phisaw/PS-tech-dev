@@ -116,24 +116,87 @@ function calcFoodTot(food, tip) {
 
 
 
- const sumArray = (numbers) => {
-    let result = 0;
-    //for loop
-    for (const number of numbers) {
-        result = number + result
-        console.log(`current result is ${result}`)
-    }
-    return { result }
- }
- //const nums = [1,2,3,4,5]
- //console.log(sumArray(nums))
+//  const sumArray = (numbers) => {
+//     let result = 0;
+//     //for loop
+//     for (const number of numbers) {
+//         result = number + result
+//         console.log(`current result is ${result}`)
+//     }
+//     return { result }
+//  }
+//  //const nums = [1,2,3,4,5]
+//  //console.log(sumArray(nums))
 
- function sum(arr) {
-    var total = 0;
-    for (var i = 0; i < arr.length; i++) {
-      total += arr[i];
-    }
-    return total;
-  }
 
-  console.log(sum([1,2,3,4,5,6]))
+
+
+//const sumArray = (numbers)
+
+// let nums = [1,2,3,4]
+
+// const sumArray = (numbers) => {
+//     let result = 0;
+
+//     for (const number of numbers) {
+//         result = number + result
+        
+//     }
+//     return {result}
+// }
+
+// // console.log(sumArray(nums));
+
+
+// const max = (numbers) => {
+//     let result = 0;
+//     for (const numbs of numbers) {
+//         if (numbs > result) {
+            
+//             result = numbs
+            
+//         }
+        
+//     }
+
+//     return {result};
+// }
+
+// let numbs = [1,2,5,8,4]
+
+// // console.log(max(numbs));
+
+
+
+const letterfrequency = (phrase) => {
+
+
+    const frequency = {}
+    
+    for (const letter of phrase) {
+        // console.log(letter);
+
+        if (letter in frequency) {
+            frequency[letter] = frequency[letter] +1
+            
+        }else{
+            frequency[letter] = 1
+        }
+    }
+
+    return frequency
+}
+
+// console.log(letterfrequency('testingkolfikodakobakikododo'));
+
+
+const wordFreq = (phrase) => {
+
+    words = phrase.split(' ')
+    // console.log(words);
+
+    return letterfrequency(words)
+
+}
+
+console.log(wordFreq('lol what lol'));
