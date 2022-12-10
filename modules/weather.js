@@ -190,13 +190,38 @@ const letterfrequency = (phrase) => {
 // console.log(letterfrequency('testingkolfikodakobakikododo'));
 
 
-const wordFreq = (phrase) => {
+// const wordFreq = (phrase) => {
 
-    words = phrase.split(' ')
-    // console.log(words);
+//     words = phrase.split(' ')
+//     // console.log(words);
 
-    return letterfrequency(words)
+//     return letterfrequency(words)
 
+// }
+
+// const userInput = prompt('Write your sentence: ')
+// console.log(wordFreq(userInput));
+
+// higher order functions!
+
+
+// map returns array.
+
+let result = [1,2,3,4].map(number => number *2)
+// console.log(result);
+
+const doubleMap = (number) => {
+    return number.map(number => number*2)
 }
+// console.log(doubleMap([1,3,5,8]));
 
-console.log(wordFreq('lol what lol'));
+let num = [1,2,3,54,6,7,2,1,1,1,3,3,3,3,3,2,2,2,2]
+// console.log(num.filter(num => num >3));
+
+const actors = [
+    {name: 'Johnny', netWorth: 2000000},
+    {name: 'Amber', netWorth: 5},
+    {name: 'Leonardo', netWorth: 10000000},
+]
+
+console.log(actors.filter(actor => actor.netWorth >10));
