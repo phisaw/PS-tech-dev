@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/webdev.css" />
+    <link rel="stylesheet" href="/css/rps.css" />
     <title>PS Tech Development</title>
   </head>
   <body>
@@ -39,7 +40,7 @@
       <button class="btn Decrease" id="btnDecrease">-</button>
       <button class="btn Power" id="btnPwr">*</button>
     </div>
-
+    <!-- 
     <form id="myForm" onsubmit="return showResult()">
       <label for="num1">Enter first number:</label>
       <input type="text" id="num1" name="num1" /><br />
@@ -48,11 +49,27 @@
       <p>Result: <span id="result">...</span></p>
       <input type="submit" value="Submit" />
       <input type="reset" value="reset" />
-    </form>
+    </form> -->
 
     <script src="/modules/calc_function.js"></script>
     <script src="/modules/counter.js"></script>
+
+    <p>Print out's from JS file</p>
+    <br />
+    <!-- <p id="actor"></p> -->
+
+    <h3>rock paper scissors!</h3>
+    <div class="rps-container">
+      <span id="rpsCounter">0</span>
+      <button class="rpsbtn Rock" id="btnRock" value="rock"></button>
+      <button class="rpsbtn Paper" id="btnPaper" value="paper"></button>
+      <button class="rpsbtn Scissor" id="btnScissor" value="scissor"></button>
+      <button class="reset" id="btnreset">🔄</button>
+      <h3 id="rpsResult"></h3>
+    </div>
     <script src="/modules/weather.js"></script>
+
+    <script src="/modules/rps.js"></script>
     <!-- <script src="/modules/tipcalc.js1"></script> -->
     <footer-box></footer-box>
     <script src="/modules/footer.js"></script>

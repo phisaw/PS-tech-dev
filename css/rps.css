@@ -1,0 +1,98 @@
+.rps-container {
+    background-color: rgb(137, 138, 85);
+    padding: 20px;
+    justify-self: center;
+    border-color: rgb(12, 12, 12);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "span span span" "button1 button2 button3" "button4 result result"   ;
+}
+
+.rps-container span {
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-weight: 700;
+
+    border-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    
+    align-self: center;
+    justify-self: center;
+    grid-column:  2;
+    grid-area: span;
+    text-align: center;
+
+
+}
+
+.rps-container button {
+    transition: background-color 0.3s ease-in-out;
+    /* set the initial opacity to 0 */
+    opacity: 1;
+    /* set the initial background-color to the desired highlight color */
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.rps-container button:hover {
+    
+    background-color: green;
+}
+
+.rps-container button:active {
+    scale: 90%;
+}
+
+
+#btnRock {
+    background-image: url(/img/rock.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    grid-area: button1;
+}
+
+#btnPaper {
+    background-image: url(/img/paper.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    grid-area: button2;
+}
+
+#btnScissor {
+    background-image: url(/img/scissor.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    grid-area: button3;
+}
+
+#btnreset {
+    grid-area: button4;
+    background-color: red;
+}
+
+
+
+#rpsResult {
+    grid-area: result;
+    color:#ffffff
+}
+
+.rps-container button {
+    font-size: 30px;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}

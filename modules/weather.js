@@ -207,7 +207,7 @@ const letterfrequency = (phrase) => {
 
 // map returns array.
 
-let result = [1,2,3,4].map(number => number *2)
+// let result = [1,2,3,4].map(number => number *2)
 // console.log(result);
 
 const doubleMap = (number) => {
@@ -224,4 +224,88 @@ const actors = [
     {name: 'Leonardo', netWorth: 10000000},
 ]
 
-console.log(actors.filter(actor => actor.netWorth >10));
+// let richactors = ((actors.filter(actor => actor.netWorth >10)));
+
+// let names = richactors.map(actors => actors.name).join(', ')
+// // console.log(names);
+
+// let money = actors.map(actors => actors.netWorth)
+// console.log(money)
+
+let combinedMoney = actors.reduce((currmoney, accum) => currmoney + accum.netWorth,0)
+
+// console.log(`combined money is ${combinedMoney}`);
+
+// const ptag = document.getElementById('actor')
+
+// ptag.innerHTML = `${names}`
+
+
+// REDUCE
+//combine all of the networths. using sum. use reduce
+
+
+// const sumArrayWithReduce = (numbers) => {
+//     numbers
+// }
+//reduce loops and gives you back the accumilator
+
+
+//declare the array with number
+//create a constant holding the result of sum of the array after looping it.
+//log the result in the console.
+// const nums = [1,2,3]
+// const result = nums.reduce(sum)
+
+// console.log(result);
+
+
+
+
+//multiply function
+// function multi(a,b) {
+//     return a * b
+// }
+
+
+// use the multiply function with reduce to multiply all the numbers of the array and recevie result
+
+// const nums2 = [1,2,3,4,5]
+// const res2 = nums2.reduce(multi)
+// console.log(res2);
+
+
+//dom manipulation
+rpsResult = document.getElementById('rpsResult')
+
+const randomFruit = (fruits) => {
+    const randomNumber = 
+    Math.floor(Math.random() * fruits.length)
+    return fruits[randomNumber]
+}
+
+let fruits = ['🍌','🍎','🍊','🍐']
+console.log(randomFruit(fruits));
+
+
+rpsResult.innerHTML = (randomFruit(fruits))
+
+
+//weather checking...
+
+//if else if else
+//rain +1 , sun - , overcast 0
+
+const weatherScorer = (weather, weather2) => {
+    let score = 0
+    if (weather == 'rainy') {
+        score = 1
+    } else if (weather == 'sunny') {
+        score = -1
+    } else {
+        score = 0
+        console.log('Enter valid weather');
+    }
+    return score
+}  
+console.log(weatherScorer('')); 

@@ -40,7 +40,6 @@ p {
     border-radius: 20px;
     border-style: solid;
     border-width: 1px;
-
     margin-top: 20px;
     margin-bottom: 50px;
     gap: 10px;
@@ -101,6 +100,79 @@ p {
     width: 40px;
     height: 40px;
 }
+
+
+
+.counter-container {
+    background-color: rgb(172, 172, 172);
+    padding: 20px;
+    justify-self: center;
+    border-color: black;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "span span span" "button1 button2 button3" "button4 button4 button4";
+}
+
+.counter-container span {
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-weight: 700;
+
+    border-color: black;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    
+    align-self: center;
+    justify-self: center;
+    grid-column:  2;
+    grid-area: span;
+    text-align: center;
+
+
+}
+
+.counter-container button {
+    border-radius: 50%;
+    font-size: larger;
+}
+
+#btnIncrease {
+    grid-area: button1;
+    background-color: rgb(30, 213, 30);
+}
+
+#btnReset {
+    grid-area: button2;
+    background-color: rgb(201, 26, 26);
+}
+
+#btnDecrease {
+    grid-area: button3;
+    background-color: rgb(218, 232, 22);
+}
+
+
+#btnPwr {
+    grid-area: button4;
+    background-color: rgb(201, 26, 198);
+    grid-column: 2;
+}
+
+.counter-container button {
+    width: 40px;
+    height: 40px;
+}
+
+
 
 @media only screen and (min-width: 700px) {
 
