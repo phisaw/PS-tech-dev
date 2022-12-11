@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/webdev.css" />
     <link rel="stylesheet" href="/css/rps.css" />
+    <link rel="stylesheet" href="/css/api_call.css" />
     <title>PS Tech Development</title>
   </head>
   <body>
@@ -30,6 +31,16 @@
       <p class="main_p">
         Den här sidan visar olika funktioner skapade med javascript .
       </p>
+    </div>
+
+    <div class="background">
+      <h3>API-calls</h3>
+      <br />
+      <p>Image below generated from API-calls</p>
+      <button id="dogBtn" type="submit">New dog!</button>
+      <div id="img_container">
+        <img id="bild" src="" alt="" />
+      </div>
     </div>
 
     <div class="background">
@@ -72,15 +83,6 @@
       </div>
     </div>
 
-    <div class="background">
-      <h3>API-calls</h3>
-      <br />
-      <p>Image below generated from API-calls</p>
-      <div class="img-container">
-        <p>placeholder></p>
-        <div class="api-image"><img src="img/arrow.png" alt="" /></div>
-      </div>
-    </div>
     <script src="/modules/api-image.js"></script>
     <script src="/modules/weather.js"></script>
     <script src="/modules/rps.js"></script>

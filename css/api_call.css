@@ -1,0 +1,23 @@
+#img_container{
+    display: grid;
+}
+
+#img_container img {
+    margin-top: 10px;
+    justify-self: center;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+#dogBtn {
+    height: 40px;
+    justify-self: center;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#dogBtn:active {
+    scale: 1.1;
+}
