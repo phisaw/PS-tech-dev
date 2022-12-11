@@ -149,7 +149,7 @@ p {
 
 #btnIncrease {
     grid-area: button1;
-    background-color: rgb(30, 213, 30);
+    background-color: #1ed51e;
 }
 
 #btnReset {
