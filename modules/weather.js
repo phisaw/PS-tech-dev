@@ -285,7 +285,7 @@ const randomFruit = (fruits) => {
 }
 
 let fruits = ['🍌','🍎','🍊','🍐']
-console.log(randomFruit(fruits));
+// console.log(randomFruit(fruits));
 
 
 rpsResult.innerHTML = (randomFruit(fruits))
@@ -298,7 +298,9 @@ rpsResult.innerHTML = (randomFruit(fruits))
 
 const weatherScorer = (weather, weather2) => {
     let score = 0
-    if (weather == 'rainy') {
+    if (weather == 'rainy' && weather2 == 'overcast') {
+        score = 2
+    } else if (weather == 'rainy') {
         score = 1
     } else if (weather == 'sunny') {
         score = -1
@@ -308,4 +310,4 @@ const weatherScorer = (weather, weather2) => {
     }
     return score
 }  
-console.log(weatherScorer('')); 
+// console.log(weatherScorer('overcast')); 
