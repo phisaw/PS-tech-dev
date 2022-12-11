@@ -1,5 +1,12 @@
+.background {
+    margin-top: 20px;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.219);
+}
+
 .rps-container {
-    background-color: rgb(137, 138, 85);
+    width: 250px;
+    background-color: rgb(52, 90, 57);
     padding: 20px;
     justify-self: center;
     border-color: rgb(12, 12, 12);
@@ -7,11 +14,11 @@
     border-style: solid;
     border-width: 1px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     gap: 10px;
     display: grid;
     justify-content: center;
-    grid-template-areas: "span span span" "button1 button2 button3" "button4 result result"   ;
+    grid-template-areas: "button4 span span" "button1 button2 button3" "result2 result2 result2" "result result result";
 }
 
 .rps-container span {
@@ -79,20 +86,38 @@
 }
 
 #btnreset {
+    
+    background-image: url(/img/reset.png);
+    justify-self: center;
+    align-self: center;
+    width: 30px;
+    height: 30px;
     grid-area: button4;
+    border-radius: 50%;
+    background-size: 60%;
     background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 
 #rpsResult {
+    font-size: 30px;
+    padding-top: 0;
     grid-area: result;
+    color:#ffffff
+}
+
+#rpsResult2 {
+    font-size: 16px;
+    padding-top: 0;
+    grid-area: result2;
     color:#ffffff
 }
 
 .rps-container button {
     font-size: 30px;
-    margin-top: 20px;
     width: 60px;
     height: 60px;
 }

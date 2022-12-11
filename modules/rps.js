@@ -17,7 +17,7 @@ const buttons = document.querySelectorAll('.rpsbtn')
 //     buttons.forEach(button => timesClicked[button.value] = 0)
 // }
 
-
+const totalScore =  {computerScore: 0, playerScore: 0}
 
     /*
   Rock Paper Scissors 🚀🔥
@@ -40,8 +40,7 @@ function getComputerChoice() {
     
     let random = Math.floor(Math.random() * result.length)
     // console.log(`Computer got: ${result[random]}!`);
-    let computerChoice = result[random]
-    return computerChoice
+    return result[random]
 }
 
 
@@ -57,11 +56,7 @@ function getResult(playerChoice, computerChoice) {
   // All situations where human draws, set `score` to 0
   if (playerChoice == computerChoice) {
     score = 0
-  }
-
-  // All situations where human wins, set `score` to 1
-  // make sure to use else ifs here
-  if (playerChoice == 'Rock' && computerChoice == 'Scissor') {
+  }else if (playerChoice == 'Rock' && computerChoice == 'Scissor') {
     score = 1
   } else if (playerChoice == 'Scissor' && computerChoice == 'Paper') {
     score = 1
@@ -71,38 +66,39 @@ function getResult(playerChoice, computerChoice) {
     score = -1
   }
   // return score
+
+//   console.log(score);
   return score
   
-}
+} 
 
 // ** showResult updates the DOM to `You Win!` or `You Lose!` or `It's a Draw!` based on the score. Also shows Player Choice vs. Computer Choice**
 function showResult(score, playerChoice, computerChoice) {
-
-    rpsResult = document.getElementById('rpsResult')
-
+    
+    rpsCounter.innerText = (totalScore['playerScore'])
     if (score == -1) {
-        rpsResult.innerText =`You picked ${playerChoice}, Computer picked ${computerChoice} You lose`
+        rpsResult.innerText =`You lose!`
     } else if (score == 0) {
         rpsResult.innerText ='Draw!'
-        console.log('Draw!');
-        console.log(`You choose: ${playerChoice}`);
-        console.log(`Computer choose: ${computerChoice}`);
     } else {
         rpsResult.innerText ='You win!'
-        console.log('Win!');
-        console.log(`You choose: ${playerChoice}`);
-        console.log(`Computer choose: ${computerChoice}`);
     }
+    
+    rpsResult2.innerText =`🧑 ${playerChoice} vs 🤖 ${computerChoice}`
   // Hint: on a score of -1
   // You should do result.innerText = 'You Lose!'
   // Don't forget to grab the div with the 'result' id!
 }
 
-console.log(showResult(1,'Rock',getComputerChoice()));
-
 // ** Calculate who won and show it on the screen **
 function onClickRPS(playerChoice) {
-  
+    let computerChoice = getComputerChoice()
+    const score = getResult(playerChoice,computerChoice)
+    // console.log(playerChoice);
+    // console.log(computerChoice);
+    // console.log(score);
+    totalScore['playerScore'] += score
+    showResult(score, playerChoice, computerChoice)
 }
 
 
@@ -113,13 +109,14 @@ function playGame() {
   paperbtn = document.getElementById('btnPaper')
   scissorbtn = document.getElementById('btnScissor')
   resultText = document.getElementById('rpsResult')
+  resultText2 = document.getElementById('rpsResult2')
   rpsCounter = document.getElementById('rpsCounter')
   reset = document.getElementById('btnreset')
   
   const buttons = document.querySelectorAll('.rpsbtn')
-  
-  
-  
+
+    buttons.forEach(button => button.onclick = () => onClickRPS(button.value))
+
   // * Adds an on click event listener to each RPS button and every time you click it, it calls the onClickRPS function with the RPS button that was last clicked *
   
   // 1. loop through the buttons using a forEach loop
@@ -128,14 +125,18 @@ function playGame() {
   // 4. Make sure to pass the currently selected rps button as an argument
 
  
-
+    reset.onclick = () => endGame();
   // Add a click listener to the end game button that runs the endGame() function on click
   
 }
 
 // ** endGame function clears all the text on the DOM **
 function endGame() {
-  
+//   console.log('endGame function initiated, clearing all data!');
+  rpsCounter.innerText = ('')
+  rpsResult.innerHTML = (randomFruit(fruits))
+  rpsResult2.innerHTML = ('Make your choice!')
+  totalScore['playerScore'] = 0
 }
 
 playGame()

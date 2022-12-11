@@ -10,8 +10,10 @@ h3 {
 
 body {
     grid-template-rows: auto 1fr 1fr .2fr 1fr;
+    
 }
 .searchfield {
+    
     background:linear-gradient(to top,#ffffff,
     #7d8067);
     display: grid;

@@ -284,7 +284,7 @@ const randomFruit = (fruits) => {
     return fruits[randomNumber]
 }
 
-let fruits = ['🍌','🍎','🍊','🍐']
+let fruits = ['🍌','🍎','🍊','🍐','🍏','🍒','🍉','🍍','🥝','🍇','🍓']
 // console.log(randomFruit(fruits));
 
 

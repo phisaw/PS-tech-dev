@@ -32,13 +32,15 @@
       </p>
     </div>
 
-    <p>Javascript Counter</p>
-    <div class="counter-container">
-      <span id="counter">0</span>
-      <button class="btn Increase" id="btnIncrease">+</button>
-      <button class="btn Reset" id="btnReset">res</button>
-      <button class="btn Decrease" id="btnDecrease">-</button>
-      <button class="btn Power" id="btnPwr">*</button>
+    <div class="background">
+      <h3>Javascript Counter</h3>
+      <div class="counter-container">
+        <span id="counter">0</span>
+        <button class="btn Increase" id="btnIncrease">+</button>
+        <button class="btn Reset" id="btnReset">res</button>
+        <button class="btn Decrease" id="btnDecrease">-</button>
+        <button class="btn Power" id="btnPwr">*</button>
+      </div>
     </div>
     <!-- 
     <form id="myForm" onsubmit="return showResult()">
@@ -54,21 +56,33 @@
     <script src="/modules/calc_function.js"></script>
     <script src="/modules/counter.js"></script>
 
-    <p>Print out's from JS file</p>
     <br />
     <!-- <p id="actor"></p> -->
 
-    <h3>rock paper scissors!</h3>
-    <div class="rps-container">
-      <span id="rpsCounter">0</span>
-      <button class="rpsbtn Rock" id="btnRock" value="rock"></button>
-      <button class="rpsbtn Paper" id="btnPaper" value="paper"></button>
-      <button class="rpsbtn Scissor" id="btnScissor" value="scissor"></button>
-      <button class="reset" id="btnreset">🔄</button>
-      <h3 id="rpsResult"></h3>
+    <div class="background">
+      <h3>rock paper scissors!</h3>
+      <div class="rps-container">
+        <span id="rpsCounter"></span>
+        <button class="rpsbtn Rock" id="btnRock" value="Rock"></button>
+        <button class="rpsbtn Paper" id="btnPaper" value="Paper"></button>
+        <button class="rpsbtn Scissor" id="btnScissor" value="Scissor"></button>
+        <button class="reset" id="btnreset"></button>
+        <h3 id="rpsResult2">- -</h3>
+        <h3 id="rpsResult"></h3>
+      </div>
     </div>
-    <script src="/modules/weather.js"></script>
 
+    <div class="background">
+      <h3>API-calls</h3>
+      <br />
+      <p>Image below generated from API-calls</p>
+      <div class="img-container">
+        <p>placeholder></p>
+        <div class="api-image"><img src="img/arrow.png" alt="" /></div>
+      </div>
+    </div>
+    <script src="/modules/api-image.js"></script>
+    <script src="/modules/weather.js"></script>
     <script src="/modules/rps.js"></script>
     <!-- <script src="/modules/tipcalc.js1"></script> -->
     <footer-box></footer-box>
