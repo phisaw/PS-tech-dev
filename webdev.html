@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/webdev.css" />
     <link rel="stylesheet" href="/css/rps.css" />
     <link rel="stylesheet" href="/css/api_call.css" />
+    <link rel="stylesheet" href="/css/superHero.css" />
     <title>PS Tech Development</title>
   </head>
   <body>
@@ -34,41 +35,38 @@
     </div>
 
     <div class="background">
+      <h3>Superhero Generator!</h3>
+      <br />
+      <div id="super_container">
+        <div id="superName">
+          <h4>- - -</h4>
+        </div>
+        <div id="search_container">
+          <input type="text" id="searchSuper" placeholder="search.." />
+          <button type="submit" id="submitBtn">--></button>
+        </div>
+        <div id="superimg_container">
+          <img id="superbild" src="" alt="" />
+        </div>
+        <div id="info">
+          <p id="gender">Gender:</p>
+          <p id="height">Height:</p>
+          <p id="weight">Weight:</p>
+          <p id="publisher">Publisher:</p>
+        </div>
+      </div>
+      <button id="superBtn" type="submit">Random</button>
+    </div>
+
+    <div class="background">
       <h3>API-calls</h3>
       <br />
-      <p>Image below generated from API-calls</p>
+      <p>Image of Dog below generated from API-calls</p>
       <div id="img_container">
         <img id="bild" src="" alt="" />
       </div>
       <button id="dogBtn" type="submit">New dog!</button>
     </div>
-
-    <div class="background">
-      <h3>Javascript Counter</h3>
-      <div class="counter-container">
-        <span id="counter">0</span>
-        <button class="btn Increase" id="btnIncrease">+</button>
-        <button class="btn Reset" id="btnReset">res</button>
-        <button class="btn Decrease" id="btnDecrease">-</button>
-        <button class="btn Power" id="btnPwr">*</button>
-      </div>
-    </div>
-    <!-- 
-    <form id="myForm" onsubmit="return showResult()">
-      <label for="num1">Enter first number:</label>
-      <input type="text" id="num1" name="num1" /><br />
-      <label for="num2">Enter second number:</label>
-      <input type="text" id="num2" name="num2" /><br />
-      <p>Result: <span id="result">...</span></p>
-      <input type="submit" value="Submit" />
-      <input type="reset" value="reset" />
-    </form> -->
-
-    <script src="/modules/calc_function.js"></script>
-    <script src="/modules/counter.js"></script>
-
-    <br />
-    <!-- <p id="actor"></p> -->
 
     <div class="background">
       <h3>rock paper scissors!</h3>
@@ -82,7 +80,21 @@
         <h3 id="rpsResult"></h3>
       </div>
     </div>
+    <div class="background">
+      <h3>Javascript Counter</h3>
+      <div class="counter-container">
+        <span id="counter">0</span>
+        <button class="btn Increase" id="btnIncrease">+</button>
+        <button class="btn Reset" id="btnReset">res</button>
+        <button class="btn Decrease" id="btnDecrease">-</button>
+        <button class="btn Power" id="btnPwr">*</button>
+      </div>
+    </div>
 
+    <br />
+    <script src="/modules/superHero.js"></script>
+    <script src="/modules/calc_function.js"></script>
+    <script src="/modules/counter.js"></script>
     <script src="/modules/api-image.js"></script>
     <script src="/modules/weather.js"></script>
     <script src="/modules/rps.js"></script>
