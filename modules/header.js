@@ -5,7 +5,7 @@ class HeaderBox extends HTMLElement {
 
         <header>
         <div class="head_links">
-        <a href="/">
+        <a href="index.html">
           <h1>PS Tech Development</h1>
         </a>
         </div>
@@ -13,8 +13,8 @@ class HeaderBox extends HTMLElement {
   
         <nav class="links">
           <ul class="ul_links">
-            <li><a class="link" href="/">Home</a></li>
-            <li><a class="link" href="/about.html">about</a></li>
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="about.html">about</a></li>
           </ul>
         </nav>
       </header>
