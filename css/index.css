@@ -1,7 +1,7 @@
 body {
     height: 100%;
     grid-template-rows: 0.5fr .5fr 3fr;
-    background: url(/img/1385574.jpg);
+    background: url(img/1385574.jpg);
     /* background:linear-gradient(to top,#ffffff,#cbc1b1); */
 }
 

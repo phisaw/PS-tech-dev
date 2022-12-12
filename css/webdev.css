@@ -61,10 +61,10 @@ p {
     border-radius: 50%;
     border-style: solid;
     border-width: 2px;
-    
+
     align-self: center;
     justify-self: center;
-    grid-column:  2;
+    grid-column: 2;
     grid-area: span;
     text-align: center;
 
