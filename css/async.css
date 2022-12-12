@@ -1,0 +1,28 @@
+#soup_container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+#soup_div {
+    background-color: bisque;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    border: red 2px solid;
+    width: 100px;
+    height: 100px;
+}
+
+#soup_div p {
+    align-self: center;
+    text-align: center;
+}
+
+#soupBtn{
+
+    width: 40px;
+    height: 40px;
+}
