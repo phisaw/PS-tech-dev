@@ -62,7 +62,7 @@
 
 
 #btnRock {
-    background-image: url(img/rock.png);
+    background-image: url(../img/rock.png);
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 }
 
 #btnPaper {
-    background-image: url(img/paper.png);
+    background-image: url(../img/paper.png);
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 }
 
 #btnScissor {
-    background-image: url(img/scissor.png);
+    background-image: url(../img/scissor.png);
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@
 
 #btnreset {
     
-    background-image: url(img/reset.png);
+    background-image: url(../img/reset.png);
     justify-self: center;
     align-self: center;
     width: 30px;
