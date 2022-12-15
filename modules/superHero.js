@@ -65,4 +65,19 @@ searchSuper.addEventListener("keydown", function(event) {
 submitBtn.onclick = () => getSearchedSuper(searchSuper.value)
 
 newSuper.onclick = () => getNewsuper()
-getNewsuper()
+
+const asyncgetNewsuper = async () => {
+    try {
+        const getsuper = await getNewsuper();
+        //console.log(getsuper);
+    } catch (error) {
+        console.log('no hero');
+        
+    }
+    
+}
+asyncgetNewsuper()
+
+
+
+//weather app!
