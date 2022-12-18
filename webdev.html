@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/api_call.css" />
     <link rel="stylesheet" href="css/superHero.css" />
     <link rel="stylesheet" href="css/async.css" />
+    <link rel="stylesheet" href="css/weatherApp.css" />
     <title>PS Tech Development</title>
   </head>
   <body>
@@ -33,6 +34,27 @@
       <p class="main_p">
         This page shows various functions created with javascript.
       </p>
+    </div>
+
+    <div class="background" id="weather_App_div">
+      <div id="weatherApp_container">
+        <div id="TitleDiv">
+          <h4>Weather</h4>
+        </div>
+        <div class="searchDiv">
+          <input type="text" name="" id="weather_input" placeholder="city..." />
+          <button type="submit" id="weather_btn">Search</button>
+        </div>
+        <div id="weatherContent">
+          <h3 id="city"><span>City</span></h3>
+          <p><span>"weather condition"</span></p>
+          <ul id="weatherData">
+            <li id="temp">Temp: <span>--</span> c</li>
+            <li id="minTemp">Min Temp: <span>--</span> c</li>
+            <li id="maxTemp">Max Temp: <span>--</span> c</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="background">
@@ -105,6 +127,7 @@
     </div>
 
     <br />
+    <script src="modules/weatherApp.js"></script>
     <script src="modules/async.js"></script>
     <script src="modules/superHero.js"></script>
     <script src="modules/calc_function.js"></script>

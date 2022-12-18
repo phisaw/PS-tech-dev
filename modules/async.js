@@ -59,6 +59,6 @@ const getDog =  async () => {
     const url = 'https://dog.ceo/api/breeds/image/random'
     const respone = await fetch(url)
     const data = await respone.json()
-    console.log(data);
+    // console.log(data);
 }
 getDog()

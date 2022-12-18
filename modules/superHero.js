@@ -66,17 +66,17 @@ submitBtn.onclick = () => getSearchedSuper(searchSuper.value)
 
 newSuper.onclick = () => getNewsuper()
 
-const asyncgetNewsuper = async () => {
-    try {
-        const getsuper = await getNewsuper();
-        //console.log(getsuper);
-    } catch (error) {
-        console.log('no hero');
+// const asyncgetNewsuper = async () => {
+//     try {
+//         const getsuper = await getNewsuper();
+//         //console.log(getsuper);
+//     } catch (error) {
+//         console.log('no hero');
         
-    }
+//     }
     
-}
-asyncgetNewsuper()
+// }
+// asyncgetNewsuper()
 
 
 

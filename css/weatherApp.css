@@ -1,0 +1,85 @@
+#weather_App_div {
+    display: grid;
+    height: 400px;
+    align-content: center;
+}
+
+#weatherApp_container {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.233);
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: 0.25rem;
+    border-radius: 10px;
+    justify-self: center;
+    background-color: rgb(150, 172, 137 , 0.5);
+    height: 350px;
+    width: 230px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-evenly;
+}
+
+#weatherApp_container h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.searchDiv {
+    display:grid;
+    justify-items: center;
+}
+
+#weather_input {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.233);
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 0.25rem;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+#weather_btn {
+    
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.233);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    background-color: rgb(66, 66, 66);
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+#weather_btn:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+#weatherContent {
+    background-color: rgba(255, 255, 255, 0.699);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.233);
+    height: 200px;
+    width: 90%;
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+    gap: 5px;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: 10px;
+}
+
+#weatherContent h3 {
+    height: 30px;
+    align-self: start;
+    width: 100%;
+    background-color: rgb(150, 172, 137 , 0.6);
+    padding-top: 5px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px 10px 0 0;
+}
+
+#weatherData {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+}
