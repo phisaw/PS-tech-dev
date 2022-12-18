@@ -38,23 +38,29 @@
 
     <div class="background" id="weather_App_div">
       <div id="weatherApp_container">
-        <div id="TitleDiv">
-          <h4>Weather</h4>
-        </div>
+        <div id="TitleDiv"></div>
+        <h4>Weather</h4>
         <div class="searchDiv">
           <input type="text" name="" id="weather_input" placeholder="city..." />
           <button type="submit" id="weather_btn">Search</button>
         </div>
         <div id="weatherContent">
           <h3 id="city"><span>City</span></h3>
-          <p><span>"weather condition"</span></p>
+
+          <div id="conditionDiv">
+            <p id="weatherCondition"><span>"weather condition"</span></p>
+            <div id="weatherImage_container"></div>
+            <img src="" alt="" srcset="" />
+          </div>
+
           <ul id="weatherData">
-            <li id="temp">Temp: <span>--</span> c</li>
-            <li id="minTemp">Min Temp: <span>--</span> c</li>
-            <li id="maxTemp">Max Temp: <span>--</span> c</li>
+            <li>Temp: <span id="temp">--</span>°</li>
+            <li>Feels like: <span id="feelsLike">--</span>°</li>
+            <li>Wind: <span id="wind">--</span> km/h</li>
           </ul>
         </div>
       </div>
+      <p id="lastDiv">Last updated: <span id="lastUpdate"></span></p>
     </div>
 
     <div class="background">

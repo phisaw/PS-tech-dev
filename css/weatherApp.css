@@ -33,13 +33,13 @@
     border: 1px solid rgba(0, 0, 0, 0.308);
     border-radius: 0.25rem;
     width: 150px;
+    height: 25px;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 1rem;
 }
 
 #weather_btn {
-    
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.233);
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
@@ -67,6 +67,24 @@
     border-radius: 10px;
 }
 
+
+#conditionDiv {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+#weatherCondition {
+    align-self: center;
+    font-size: 1.3rem;
+}
+
+#weatherImage_container {
+    align-self: center;
+}
+
 #weatherContent h3 {
     height: 30px;
     align-self: start;
@@ -82,4 +100,10 @@
     display: grid;
     justify-items: center;
     gap: 5px;
+}
+
+#lastDiv {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 0.8rem;
 }
