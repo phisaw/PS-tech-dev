@@ -28,20 +28,19 @@ submitCity.onclick = () => getWeather(searchCity.value)
 const getWeather = (cityWeather) => {
 fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${cityWeather}`, options)
 
-.then(response => response.json())
-.then(json => {
+	.then(response => response.json())
+	.then(json => {
 	
-	console.log(json)
-	cityName.innerText = json.location.name
-	weatherCond.innerText = json.current.condition.text
-	temp.innerText = json.current.temp_c
-	feelsLike.innerText = json.current.feelslike_c
-	wind.innerText = json.current.wind_kph
+		console.log(json)
+		cityName.innerText = json.location.name
+		weatherCond.innerText = json.current.condition.text
+		temp.innerText = json.current.temp_c
+		feelsLike.innerText = json.current.feelslike_c
+		wind.innerText = json.current.wind_kph
 
-	imgContainer.innerHTML = `<img src='${json.current.condition.icon}'/>`
-	lastUpdate.innerText = json.current.last_updated
-}
-)
+		imgContainer.innerHTML = `<img src='${json.current.condition.icon}'/>`
+		lastUpdate.innerText = json.current.last_updated
+	})
 }
 
 searchCity.addEventListener("keydown", function(event) {
