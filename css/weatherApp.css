@@ -1,8 +1,9 @@
 #weather_App_div {
     display: grid;
-    height: 400px;
+    height: 500px;
     align-content: center;
 }
+
 
 #weatherApp_container {
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.233);
@@ -11,11 +12,15 @@
     border-radius: 10px;
     justify-self: center;
     background-color: rgb(150, 172, 137 , 0.5);
-    height: 350px;
+    height: 450px;
     width: 230px;
     display: grid;
-    grid-template-columns: 1fr;
-    align-content: space-evenly;
+    grid-template-rows: 1fr 1fr 4fr;
+}
+
+#TitleDiv {
+    display: grid;
+    align-items: center;
 }
 
 #weatherApp_container h4 {
@@ -26,6 +31,7 @@
 .searchDiv {
     display:grid;
     justify-items: center;
+    grid-template-rows: 1fr 1fr;
 }
 
 #weather_input {
@@ -35,8 +41,11 @@
     width: 150px;
     height: 25px;
     border-radius: 5px;
-    margin-bottom: 10px;
     font-size: 1rem;
+}
+
+#weather_input:hover {
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #weather_btn {
@@ -57,24 +66,39 @@
 #weatherContent {
     background-color: rgba(255, 255, 255, 0.699);
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.233);
-    height: 200px;
+    height: 250px;
     width: 90%;
     display: grid;
     justify-self: center;
     justify-items: center;
-    gap: 5px;
+    gap: 0px;
     /* border: 1px solid rgba(0,0,0,.125); */
     border-radius: 10px;
+    grid-template-rows: 1fr 1fr 1fr 4fr;
+}
+
+#tempDiv {
+    font-size: 2rem;
+    padding-top: 20px;
+    justify-self: center;
+    text-align: center;
+}
+#temp {
+    font-size: 2rem;
 }
 
 
 #conditionDiv {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     align-content: center;
     justify-content: space-evenly;
+    gap:0;
+    padding-bottom: 10px;
 }
+
+
 
 #weatherCondition {
     align-self: center;
@@ -82,7 +106,13 @@
 }
 
 #weatherImage_container {
+    display: grid;
+    justify-content: center;
     align-self: center;
+}
+#img {
+    width: 20px;
+    justify-self: center;
 }
 
 #weatherContent h3 {
@@ -99,7 +129,7 @@
     width: 100%;
     display: grid;
     justify-items: center;
-    gap: 5px;
+    margin-bottom: 10px;
 }
 
 #lastDiv {
