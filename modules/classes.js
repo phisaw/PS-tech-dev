@@ -70,12 +70,18 @@ const porche = new Car('Porche', 'yellow', 250)
 // console.log(number)
 //create your own methods in classes that already exists.
 
-Array.prototype.myPush = function() {
+Array.prototype.myPush = function(item) {
     // 
-   this[this.length] = 'test'
+   this[this.length] = item
     return this
 }
 
 const testfruits = ['🍌','🍓','🍪']
 
-console.log(testfruits.myPush())
+console.log(testfruits.myPush('hello'))
+
+
+const siffror = [1,2,3,4]
+const doubleNumbers = siffror.map(siffror => siffror * 2)
+
+console.log(doubleNumbers)
