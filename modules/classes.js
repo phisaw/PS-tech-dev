@@ -53,16 +53,6 @@ const porche = new Car('Porche', 'yellow', 250)
 // ferrari.zeroToSixty()
 
 // ferrari.drive()
-// ferrari.drive()
-// ferrari.break()
-
-// ferrari.stop()
-
-
-// porche.drive(20)
-// porche.drive()
-// porche.drive()
-// porche.drive(20)
 
 // const number = [1,2,3,]
 //push is a builtin function for class Array.
@@ -78,10 +68,45 @@ Array.prototype.myPush = function(item) {
 
 const testfruits = ['🍌','🍓','🍪']
 
-console.log(testfruits.myPush('hello'))
+// console.log(testfruits.myPush('hello'))
+// console.log(testfruits.myPush('key'))
 
 
 const siffror = [1,2,3,4]
 const doubleNumbers = siffror.map(siffror => siffror * 2)
 
-console.log(doubleNumbers)
+// console.log(doubleNumbers)
+
+
+class Bank {
+    constructor(balance) {
+        this.balance = balance
+    }
+    
+    deposit(money) {
+        this.balance += money
+    }
+    
+    
+    withdraw(money) {
+        if (this.balance>=money) {
+            this.balance -= money
+        }else{
+            console.log(`"insufficient funds"`);	
+        }
+    }
+
+    getCurrentbalance () {
+        return console.log(`Balance left: ${this.balance} SEK`); 
+    }
+}
+
+SEB = new Bank(500)
+
+// SEB.getCurrentbalance(); 
+// SEB.deposit(100)
+// SEB.getCurrentbalance(); 
+// SEB.withdraw(200)
+// SEB.getCurrentbalance(); 
+// SEB.withdraw(410)
+// SEB.getCurrentbalance(); 
