@@ -6,6 +6,7 @@ Create an updateGame() function that will update the DOM with the state of the g
 
 - updateGame()
 
+
 These are the 2 classes you must create and their methods 👇
 ========================================
 
@@ -44,9 +45,12 @@ let p2HealthDiv = document.getElementById('p2Health')
 // ** Check if either players health is  0 and if it is, then update isOver to true **
 const updateGame = (p1,p2,gameState) => {
   // Update the DOM with the names and the latest health of players
-
+  p1NameDiv.innerText = p1.name
+  p2NameDiv.innerText = p2.name
+  p1HealthDiv.innerText = p1.health
+  p2HealthDiv.innerText = p2.health
   // Condition IF either player health is <= 0 then set isOver to true and declareWinner
-
+  
 }
 
 // ** Create the Player class which can create a player with all it's attributes and methods **
@@ -64,28 +68,28 @@ class Player {
   strike (player, enemy, attackDmg) {
     
     // Get random number between 1 - 10 and that is damageAmount
+    damageAmount = Math.floor(Math.random() *10) +1
 
     // Subtract the enemy health with the damageAmount
-
+    this.health -= damageAmount
     //  Update the game and DOM with updateGame()
-
+    
     //  Return a message of 'player name attacks enemy name for damageAmount'
-
+        console.log(`Player attacks enemy for ${damageAmount}`);
   }
   // ** Heal the player for random number from  1 to 5 **
   heal (player) {
     
     // Get random number between 1 - 5 and store that in hpAmount
-
+    hpAmount = Math.floor(Math.random() *5) +1
     // Add hpAmount to players health
-
+    this.health +=hpAmount
     //  Update the game and DOM with updateGame()
 
     //  Return a message of 'player name heals for hpAmount HP'
-
+      console.log(`Player heals for ${hpAmount}`);
   }
 }
-
 // ** Create the Game class with all it's attributes and methods to run a match **
 // game = new Game()
 // game.isOver 👉 false
@@ -127,3 +131,61 @@ class Game {
   }
 
 }
+
+
+// ** Create 2 players using the player class **
+
+const Phil = new Player('Phil',100,10)
+const Rocky = new Player('Rocky',100,9)
+console.log(Phil);
+// ** Save original Player Data into a variable in order to reset **
+let p1 = Phil;
+let p2 = Rocky;
+
+// ** Create the game object from the Game class **
+
+let game = new Game()
+console.log(game);
+// ** Intialize the game by calling updateGame() **
+updateGame(p1,p2,game.isOver)
+
+// ** Save intial isOver from the game object inside this variable **
+let gameState;
+
+
+// ** Add a click listener to the simulate button that runs the play() method on click and pass in the players **
+
+
+// Add functionality where players can press a button to attack OR heal
+
+// ** Player 1 Controls **
+document.addEventListener('keydown', function(e) {
+  // if you press Q AND the enemy health is greater than 0 AND isOver is still false then strike()
+
+    // After striking then play attack sound
+
+});
+
+document.addEventListener('keydown', function(e) {
+  
+  // if you press a AND the player health is greater than 0 AND isOver is still false then strike()
+
+    // After healing then play heal sound
+
+});
+
+// ** Player 2 Controls **
+document.addEventListener('keydown', function(e) {
+  
+  // if you press p AND enemy health is greater than 0 AND isOver is still false then stike()
+
+    // After striking then play attack sound
+
+});
+
+document.addEventListener('keydown', function(e) {
+  // if you press l AND the player health is greater than 0 AND isOver is still false then heal()
+
+    // After healing then play heal sound
+
+});
