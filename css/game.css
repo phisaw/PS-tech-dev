@@ -21,7 +21,7 @@ body {
   /* margin-left: 25%; */
   padding-top: 25%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
