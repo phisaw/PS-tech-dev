@@ -86,13 +86,13 @@ class Player {
   heal (player) {
     
     // Get random number between 1 - 5 and store that in hpAmount
-    hpAmount = Math.floor(Math.random() *5) +1
+    let hpAmount = Math.floor(Math.random() *5) +1
     // Add hpAmount to players health
-    this.health +=hpAmount
+    player.health += hpAmount
     //  Update the game and DOM with updateGame()
-
+    updateGame(player, p2, game.isOver)
     //  Return a message of 'player name heals for hpAmount HP'
-      console.log(`Player heals for ${hpAmount}`);
+     return console.log(`${player.name} heals for ${hpAmount}`);
   }
 }
 // ** Create the Game class with all it's attributes and methods to run a match **
@@ -107,14 +107,14 @@ class Game {
   declareWinner(isOver,p1, p2) {
     let message;
     // Create a message variable that will hold a message based on the condition
-    if (isOver) {
-      if (p1.health <=0) {
+    if (isOver && p1.health <=0) {
+      message = `${p2.name} wins!`
+    }else if (isOver && p2.health <=0) {
         message = `${p1.name} wins!`
-      } else {
-        message = `${p2.name} wins!`
-      }
     }
 
+    document.getElementById('victory').play()
+    
     // If isOver is true AND p1 health is <= 0 then update message variable  to 'p1 WINS!'
 
     // Else if isOver is true AND p2 health is <= 0 then update message variable  to 'p2 WINS!'
@@ -127,13 +127,18 @@ class Game {
   // ** Reset the players health back to it's original state and isOver to FALSE **
   reset(p1,p2) {
     // set p1 health and p2 health back to 100 and isOver back to false and clear resultDiv.innerText and don't forget to updateGame()
+    this.isOver = false
+    p1.health = 100
+    p2.health = 100
+    resultDiv.innerText = ''
+    this.updateGame()
 
   }
   
   // ** Simulates the whole match untill one player runs out of health **
   play(p1, p2) {
     // Reset to make sure player health is back to full before starting
-
+    this.reset(p1,p2)
     // Make sure the players take turns untill isOver is TRUE
     while (!this.isOver) {
       //Make sure both players get strike() and heal() once each loop
@@ -149,7 +154,7 @@ class Game {
 
 const Phil = new Player('Phil',100,10)
 const Rocky = new Player('Rocky',100,9)
-console.log(Phil);
+// console.log(Phil);
 // ** Save original Player Data into a variable in order to reset **
 let p1 = Phil;
 let p2 = Rocky;
@@ -157,7 +162,7 @@ let p2 = Rocky;
 // ** Create the game object from the Game class **
 
 let game = new Game()
-console.log(game);  
+// console.log(game);  
 // ** Intialize the game by calling updateGame() **
 updateGame(p1,p2,game.isOver)
 
@@ -173,18 +178,18 @@ let gameState;
 // ** Player 1 Controls **
 document.addEventListener('keydown', function(e) {
   // if you press Q AND the enemy health is greater than 0 AND isOver is still false then strike()
-  if (e.key =='q' && p2.health>0 && !isOver) {
-    strike(p1,p1.attackDmg)
+  if (e.key ='q' && p2.health>0 && !game.isOver) {
+    p1.strike(p1,p2,p1.attackDmg)
   }
+  document.getElementById('p1attack').play()
     // After striking then play attack sound
-
 });
 
 document.addEventListener('keydown', function(e) {
   
   // if you press a AND the player health is greater than 0 AND isOver is still false then strike()
-  if (e.key =='a' && p1.health>0 && !isOver) {
-    heal(p1)
+  if (e.key ='a' && p1.health>0 && !game.isOver) {
+    p1.heal(p1)
   }
     // After healing then play heal sound
 
@@ -194,9 +199,9 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('keydown', function(e) {
   
   // if you press p AND enemy health is greater than 0 AND isOver is still false then stike()
-  if (e.key =='p' && p2.health>0 && !isOver) {
-    console.log(strike(p2,p2.attackDmg)); 
-    
+  if (e.key ='p' && p1.health>0 && !game.isOver) {
+    p2.strike(p1,p2,p2.attackDmg); 
+    document.getElementById('p2attack').play()
   }
     // After striking then play attack sound
 
@@ -204,13 +209,15 @@ document.addEventListener('keydown', function(e) {
 
 document.addEventListener('keydown', function(e) {
   // if you press l AND the player health is greater than 0 AND isOver is still false then heal()
-  if (e.key =='l' && p2.health>0 && !isOver) {
-    heal(p2)
+  if (e.key ='l' && p2.health>0 && !game.isOver) {
+    p2.heal(p2)
   }
     // After healing then play heal sound
 
 });
 
-console.log(p1.strike(p1,p2,p1.attackDmg));
+// console.log(p1.strike(p1,p2,p1.attackDmg));
 
-console.log(p2.strike(p2,p1,p2.attackDmg));
+// console.log(p2.strike(p2,p1,p2.attackDmg));
+
+// console.log(p1.heal(p1))
